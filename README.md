@@ -1,4 +1,4 @@
-#Quick Start
+#Quick Start#
 
 1. Run following command to kick off the environment
 
@@ -15,6 +15,6 @@
 5. Begin to review QuickStart.upnb
 
 
-#Reference
+#Reference#
 
 https://www.tensorflow.org/tutorials/keras/save_and_restore_models
