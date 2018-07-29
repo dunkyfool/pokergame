@@ -1,5 +1,7 @@
 #!/bin/bash
 
+export CURRENTPATH=`pwd`
+
 if [ "$1" = "" ]; then
 	echo "./cmd.sh up|down|restart"
 elif [ "$1" = "up" ]; then
@@ -15,5 +17,5 @@ elif [ "$1" = "restart" ]; then
 elif [ "$1" = "exec" ]; then
 	docker-compose exec shell bash
 else
-        docker-compose ${1}
+    docker-compose ${1}
 fi

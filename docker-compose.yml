@@ -5,7 +5,7 @@ services:
     image: tensorflow/tensorflow
     hostname: 'shell'
     volumes:
-      - /home/dunkyfool/Projects/tmp/pokergame:/notebooks/pokergame
+      - ${CURRENTPATH}:/notebooks/pokergame
     ports: 
       - 8888:8888
       - 6006:6006
