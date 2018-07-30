@@ -14,6 +14,8 @@
 
 5. Begin to review QuickStart.upnb
 
+6. (Optional) User browser to access localhost:6006 for tensorboard
+
 
 # Reference #
 
