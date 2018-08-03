@@ -7,7 +7,7 @@ if [ "$1" = "" ]; then
 elif [ "$1" = "up" ]; then
 	docker-compose up -d
         docker-compose exec shell jupyter notebook list | cut -d'=' -f2 | cut -d' ' -f1 | grep -v Current > token
-	docker-compose exec -d shell tensorboard --logdir './Graph'
+	docker-compose exec -d shell tensorboard --logdir '/notebooks/pokergame/Graph'
 elif [ "$1" = "down" ]; then
 	docker-compose kill
 	docker-compose rm -f
@@ -16,7 +16,7 @@ elif [ "$1" = "restart" ]; then
 	docker-compose rm -f
 	docker-compose up -d
         docker-compose exec shell jupyter notebook list | cut -d'=' -f2 | cut -d' ' -f1 | grep -v Current > token
-	docker-compose exec -d shell tensorboard --logdir './Graph'
+	docker-compose exec -d shell tensorboard --logdir '/notebooks/pokergame/Graph'
 elif [ "$1" = "exec" ]; then
 	docker-compose exec shell bash
 else
